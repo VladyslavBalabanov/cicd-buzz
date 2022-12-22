@@ -6,5 +6,5 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t cicd-buzz:$TAG .
-docker tag https://github.com/VladyslavBalabanov/cicd-buzz cicd-buzz
+docker tag https://github.com/vladyslavbalabanov/cicd-buzz cicd-buzz
 docker push $DOCKER_USER/cicd-buzz:$TAG
